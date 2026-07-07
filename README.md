@@ -55,3 +55,18 @@ Ask questions such as:
 ### Document Processing
 - PyPDF
 - RecursiveCharacterTextSplitter
+
+## Project Structure
+```text
+resume-match-analyzer/
+│
+├── app.py
+├── vector.py
+├── frontend.py
+│
+├── uploads/
+│
+├── resume_db/
+│
+└── job_db/
+```
