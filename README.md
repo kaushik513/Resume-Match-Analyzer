@@ -56,3 +56,22 @@ resume-match-analyzer/
 │
 └── job_db/
 ```
+
+## How To Run
+
+1. Clone the repository: `git clone https://github.com/kaushik513/Resume-Match-Analyzer`
+2. Create and activate a virtual environment: 
+    - `python -m venv .venv`
+    - `.venv\Scripts\Activate.ps1` (on Windows)
+3. Install the requirements: `pip install -r requirements.txt`
+4. [Install Ollama](https://ollama.com/download) then pull the required models:
+    - `ollama pull mistral`
+    - `ollama pull mxbai-embed-large`
+    - Verify: `ollama list`
+5. Run the backend: `fastapi dev app.py`
+    - API Documentation: http://localhost:8000/docs
+6. Run the frontend: `streamlit run frontend.py`
+
+## Author
+Kaushik Nanduru <br>
+Built as a portfolio project to demonstrate end-to-end AI application development using modern LLM, RAG, and full-stack engineering practices.
