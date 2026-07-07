@@ -2,7 +2,6 @@
 
 An AI-powered Resume Job Match Analyzer built using FastAPI, Streamlit, LangChain, ChromaDB, and Ollama. This application helps candidates evaluate how well their resume matches a specific job description, identify missing skills, and receive personalized recommendations for improvement.
 
----
 
 ## Features
 
@@ -37,24 +36,11 @@ Ask questions such as:
 
 ## Tech Stack
 
-### Backend
-- FastAPI
-- LangChain
-- Ollama
-- ChromaDB
-
-### Frontend
-- Streamlit
-
-### Embeddings
-- mxbai-embed-large
-
-### LLM
-- Mistral 7B
-
-### Document Processing
-- PyPDF
-- RecursiveCharacterTextSplitter
+- Backend: FastAPI, LangChain, Ollama, ChromaDB
+- Frontend: Streamlit
+- Embeddings: mxbai-embed-large
+- LLM: Mistral 7B
+- Document Processing: PyPDF, RecursiveCharacterTextSplitter
 
 ## Project Structure
 ```text
