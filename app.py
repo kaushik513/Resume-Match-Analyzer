@@ -1,5 +1,6 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
 
 from langchain_ollama.llms import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
@@ -17,6 +18,13 @@ import shutil
 app = FastAPI(
     title="Resume Job Match Analyzer",
     version="1.0.0"
+)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 UPLOAD_DIR = "uploads"

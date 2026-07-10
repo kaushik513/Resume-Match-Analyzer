@@ -37,7 +37,7 @@ Ask questions such as:
 ## Tech Stack
 
 - Backend: FastAPI, LangChain, Ollama, ChromaDB
-- Frontend: Streamlit
+- Frontend: HTML, CSS, JavaScript
 - Embeddings: mxbai-embed-large
 - LLM: Mistral 7B
 - Document Processing: PyPDF, RecursiveCharacterTextSplitter
@@ -48,7 +48,11 @@ resume-match-analyzer/
 │
 ├── app.py
 ├── vector.py
-├── frontend.py
+│
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
 │
 ├── uploads/
 │
@@ -71,7 +75,9 @@ resume-match-analyzer/
     - Verify: `ollama list`
 6. Run the backend: `fastapi dev app.py`
     - API Documentation: http://localhost:8000/docs
-7. Run the frontend: `streamlit run frontend.py`
+7. Launch the frontend:
+    - Right click on index.html
+    - Select **Open with Live Server**
 
 ## Author
 Kaushik Nanduru <br>

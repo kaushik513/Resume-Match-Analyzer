@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Match Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📄 Resume Match Analyzer</h1>
+        <p>
+            Upload a resume and a job description, then analyze the candidate match using AI.
+        </p>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+
+            <h2>Upload Documents</h2>
+
+            <section class="upload-section">
+
+                <h3>Resume</h3>
+
+                <input
+                    type="file"
+                    id="resume-file"
+                    accept=".pdf,.txt"
+                >
+
+                <button id="upload-resume-btn">
+                    Upload Resume
+                </button>
+
+                <div id="resume-status"></div>
+
+            </section>
+
+            <hr>
+
+            <section class="upload-section">
+
+                <h3>Job Description</h3>
+
+                <input
+                    type="file"
+                    id="job-file"
+                    accept=".pdf,.txt"
+                >
+
+                <button id="upload-job-btn">
+                    Upload Job Description
+                </button>
+
+                <div id="job-status"></div>
+
+            </section>
+
+        </aside>
+
+        <main>
+
+            <section>
+
+                <h2>🎯 Match Analysis</h2>
+
+                <button id="analyze-btn">
+                    Analyze Match
+                </button>
+
+                <div id="analysis-result">
+
+                </div>
+
+            </section>
+
+            <hr>
+
+            <section>
+
+                <h2>💬 Ask Questions</h2>
+
+                <label for="question">
+                    Ask anything about the resume or job description
+                </label>
+
+                <input
+                    type="text"
+                    id="question"
+                    placeholder="Example: How do I improve my resume for this role?"
+                >
+
+                <button id="ask-btn">
+                    Ask Question
+                </button>
+                <br><br>
+                <div id="answer-container">
+                    <h3>Answer</h3>
+                    <div id="answer-result">
+                    </div>
+                
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        Powered by FastAPI • ChromaDB • LangChain • Ollama
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
